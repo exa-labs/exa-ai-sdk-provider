@@ -1,0 +1,53 @@
+{
+  "name": "@exa/ai-sdk-provider",
+  "version": "0.1.0",
+  "description": "Exa provider for Vercel AI SDK",
+  "author": "Exa",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "exa",
+    "search",
+    "vercel-ai-sdk",
+    "language-model"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@ai-sdk/provider": "^2.0.0",
+    "@ai-sdk/provider-utils": "^3.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@ai-sdk/provider": "^2.0.0",
+    "@ai-sdk/provider-utils": "^3.0.0",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exa/exa-vercel-ai-sdk.git"
+  },
+  "homepage": "https://github.com/exa/exa-vercel-ai-sdk#readme"
+}
+
