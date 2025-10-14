@@ -5,7 +5,7 @@ Integrate Exa's web search API with Vercel AI SDK.
 ## Installation
 
 ```bash
-npm install @exa/ai-sdk-provider
+npm install exa-ai-sdk-provider
 ```
 
 ## Setup
@@ -17,7 +17,7 @@ export EXA_API_KEY="your-api-key"
 ## Usage
 
 ```typescript
-import { exa } from '@exa/ai-sdk-provider';
+import { exa } from 'exa-ai-sdk-provider';
 import { generateText } from 'ai';
 
 const result = await generateText({
@@ -46,7 +46,7 @@ for await (const chunk of result.textStream) {
 ## Custom Configuration
 
 ```typescript
-import { createExa } from '@exa/ai-sdk-provider';
+import { createExa } from 'exa-ai-sdk-provider';
 
 const exa = createExa({
   apiKey: 'your-key',

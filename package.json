@@ -1,5 +1,5 @@
 {
-  "name": "@exa/ai-sdk-provider",
+  "name": "exa-ai-sdk-provider",
   "version": "0.1.0",
   "description": "Exa provider for Vercel AI SDK",
   "author": "Exa",
@@ -46,8 +46,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/exa/exa-vercel-ai-sdk.git"
+    "url": "https://github.com/exa-labs/exa-ai-sdk-provider.git"
   },
-  "homepage": "https://github.com/exa/exa-vercel-ai-sdk#readme"
+  "homepage": "https://github.com/exa-labs/exa-ai-sdk-provider#readme"
 }
 
