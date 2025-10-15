@@ -1,6 +1,6 @@
 {
   "name": "exa-ai-sdk-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Exa provider for Vercel AI SDK. Exa is a web search API.",
   "author": "Exa",
   "license": "MIT",

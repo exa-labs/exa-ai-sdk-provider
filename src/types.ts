@@ -34,8 +34,10 @@ export interface ExaAnswerCitation {
   author?: string | null;
   publishedDate?: string | null;
   text?: string;
+  snippet?: string;
   image?: string;
   favicon?: string;
+  score?: number;
 }
 
 /**

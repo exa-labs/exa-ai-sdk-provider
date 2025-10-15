@@ -147,8 +147,10 @@ export class ExaAnswerLanguageModel implements LanguageModelV2 {
               author: z.string().nullable().optional(),
               publishedDate: z.string().nullable().optional(),
               text: z.string().optional(),
+              snippet: z.string().optional(),
               image: z.string().optional(),
               favicon: z.string().optional(),
+              score: z.number().optional(),
             }),
           ),
           costDollars: z
@@ -163,7 +165,7 @@ export class ExaAnswerLanguageModel implements LanguageModelV2 {
       fetch: this.config.fetch,
     });
 
-    const { answer, citations } = response;
+    const { answer, citations, costDollars } = response;
 
     // Build V2 content structure
     const content = [
@@ -199,6 +201,7 @@ export class ExaAnswerLanguageModel implements LanguageModelV2 {
       providerMetadata: {
         exa: {
           citations: JSON.parse(JSON.stringify(citations)),
+          costDollars: costDollars ? JSON.parse(JSON.stringify(costDollars)) : undefined,
         },
       },
     };
